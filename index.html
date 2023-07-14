@@ -1,9 +1,85 @@
 <html>
-	<head>
-		<title>Trabalho de ICC</title>
-	</head>
-	<body>
-		<h1>Olá, mundo!</h1>
-		<p>Este é um parágrafo</p>
-	</body>
+
+<head>
+	<title>
+		Trabalho de ICC
+	</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		type="text/css" />
+	<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<header class="p-3 bg-dark text-white">
+	<div class="container">
+		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<img src="img/github.png" style="max-width: 5%;" alt="icone do github">
+
+			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+				<li><a href="video.html" class="nav-link px-2 text-secondary">Vídeo</a></li>
+				<li><a href="audio.html" class="nav-link px-2 text-white">Áudio</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<br>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Como configurar o Github</h1>
+			<p>Para configurar o GitHub, siga estes passos:</p>
+
+			<ol>
+				<li>Crie uma conta no GitHub acessando <a href="https://github.com">https://github.com</a> e preenchendo
+					as informações necessárias.</li>
+				<li>Instale o Git em seu computador. Você pode baixar a versão adequada para o seu sistema operacional
+					em <a href="https://git-scm.com">https://git-scm.com</a>.</li>
+				<li>Configure seu nome de usuário e endereço de e-mail no Git usando os seguintes comandos no terminal
+					ou prompt de comando:
+					<pre class="codigo-tema">
+						git config --global user.name "Seu Nome"
+						git config --global user.email seu-email@example.com
+					</pre>
+				</li>
+				<li>Opcionalmente, gere uma chave SSH para autenticação segura, executando o seguinte comando no
+					terminal ou prompt de comando:
+					<pre class="codigo-tema">
+						ssh-keygen -t rsa -b 4096 -C "seu-email@example.com"
+					</pre>
+				</li>
+				<li>Adicione a chave SSH gerada ao GitHub, copiando o conteúdo da chave pública (geralmente localizada
+					em ~/.ssh/id_rsa.pub) e adicionando-a nas configurações de SSH do GitHub.</li>
+			</ol>
+
+			<p>Agora você está configurado no GitHub e pode começar a usar seus recursos. Você pode criar repositórios,
+				clonar repositórios existentes, adicionar, commitar e enviar alterações usando os comandos Git
+				correspondentes.</p>
+
+			<p>Lembre-se de explorar mais recursos do GitHub, como a configuração de autenticação em dois fatores,
+				colaboração em projetos e uso avançado do Git. Consulte a documentação oficial do GitHub e do Git para
+				obter mais informações.</p>
+
+		</div>
+		<hr>
+		<div class="row">
+			<table class="table table-success table-striped-columns">
+				<th>
+					<b>Comando</b>
+				<td><b>Descrição</b></td>
+				<td><b>Execução</b></td>
+				</th>
+				<tbody>
+					<tr>
+						<td>init</td>
+						<td>Inicia um repositorio git na pasta atual.</td>
+						<td>git <mark>init</mark></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<footer style=>
+	<small>Feito por Diogo Moreira</small>
+</footer>
+
 </html>
